@@ -3,7 +3,7 @@
     <div>
       <!-- <%= student.first_name + " " + student.last_name %>
      -->
-      <%= student.first_name + " " + student.last_name link_to("student", students_path(student.id))%>
+      <%= link_to(student.first_name + " " + student.last_name, students_path(student.id))%>
 
     </div>
   <% end %>
